@@ -16,3 +16,14 @@ firebase.initializeApp(firebaseConfig);
 
 const auth = firebase.auth();
 const db = firebase.firestore();
+
+
+auth.signInWithEmailAndPassword('trueidapp@truedigital.com', 'YsYsFcRBcjpCPFxKxYrCBcnMYn2Dy7GB').then(cred => {
+    // console.log(cred.user);
+    console.log()
+})
+
+
+auth.onAuthStateChanged(user => {
+    console.log
+})
