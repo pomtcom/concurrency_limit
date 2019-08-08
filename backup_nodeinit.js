@@ -22,7 +22,7 @@ firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
 const db = firebase.firestore();
 
-auth.signInWithEmailAndPassword('trueidapp@truedigital.com', 'YsYsFcRBcjpCPFxKxYrCBcnMYn2Dy7GB').catch(function(error) {
+auth.signInWithEmailAndPassword('', '').catch(function(error) {
     // Handle Errors here.
     // console.log("Authentication");
     var errorCode = error.code;

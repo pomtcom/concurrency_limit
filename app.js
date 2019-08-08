@@ -49,7 +49,7 @@ app_express.post('/testpost', (req, res) => {
   ssoEndNumber = req.body.SSO % 10;
   console.log('ssoEndNumber is ', ssoEndNumber);
 
-  auth.signInWithEmailAndPassword('trueidapp@truedigital.com', 'YsYsFcRBcjpCPFxKxYrCBcnMYn2Dy7GB').then(cred => {
+  auth.signInWithEmailAndPassword('', '').then(cred => {
     console.log('login with email and password');
     auth.onAuthStateChanged(user => {
       if (user) {
